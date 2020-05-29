@@ -1,3 +1,5 @@
+import os
+os.chdir('C:\\Users\\mahoy\\Documents\\GitHub\\Python-Challenge\\PyBank')
 
 # Open the csv file, then calculate the total of values in row[1], using for loop.
 from csv import reader 
@@ -59,21 +61,21 @@ with open("Resources/budget_data.csv") as read_obj:
 print(greatestdecrease)
 
 
-# print(f"""
-# Financial Analysis
-# -------------------------------
-# Total Monts: {totalmonths}
-# total: {total}
-# Average Change : {averagechange}
-# Greatest Increase in Profits : {greatestincrease}
-# Greatest Decrease in Profits : {greatestdecrease}
-# """, end="")
+print(f"""
+Financial Analysis
+-------------------------------
+Total Monts: {totalmonths}
+total: {total}
+Average Change : {averagechange}
+Greatest Increase in Profits : {greatestincrease}
+Greatest Decrease in Profits : {greatestdecrease}
+""", end="")
 
 # import os so that python can change the directory to create the file.
-import os
+
 
 os.getcwd()
-os.chdir('C:\\Users\\mahoy\\Documents\\GitHub\\Python-Challenge\\analysis')
+os.chdir('C:\\Users\\mahoy\\Documents\\GitHub\\Python-Challenge\\PyBank\\analysis')
 
 result_txt = open("Result.txt", "w", encoding='utf-8')
 print(f"""
