@@ -1,7 +1,7 @@
 
 # Open the csv file, then calculate the total of values in row[1], using for loop.
 from csv import reader 
-with open("PyBank/Resources/budget_data.csv") as read_obj: 
+with open("Resources/budget_data.csv") as read_obj: 
     csv_reader = reader(read_obj) 
     total = 0
     next(csv_reader)
@@ -12,7 +12,7 @@ print(total)
 # Change the csv file contents into a list, so that the number of indexes can be identified, which will be equivalent to the number of monhts.
 # Counting from [1:] will allow us to avoid counting the header.
 from csv import reader    
-with open("PyBank/Resources/budget_data.csv") as read_obj:
+with open("Resources/budget_data.csv") as read_obj:
     csv_reader = reader(read_obj)
     list_of_rows = list(csv_reader)
     totalmonths = len(list_of_rows[1:])
@@ -23,13 +23,13 @@ totaldifference = 0
 difference = 0
 
 from csv import reader    
-with open("PyBank/Resources/budget_data.csv") as read_obj:
+with open("Resources/budget_data.csv") as read_obj:
     csv_reader = reader(read_obj)
     next(csv_reader)
     for i in csv_reader:
         index = i[1]
 
-    with open("PyBank/Resources/budget_data.csv") as read_obj:
+    with open("Resources/budget_data.csv") as read_obj:
         csv_reader = reader(read_obj)
         for row in csv_reader:
             if row[1] != "Profit/Losses":
@@ -45,14 +45,14 @@ print(averagechange)
 
 # Using max and min method, can identify greatest decrease and increase.
 from csv import reader    
-with open("PyBank/Resources/budget_data.csv") as read_obj:
+with open("Resources/budget_data.csv") as read_obj:
     csv_reader = reader(read_obj)
     next(csv_reader)
     greatestincrease = max(csv_reader, key=lambda row: int(row[1]))
 print(greatestincrease)
 
 from csv import reader    
-with open("PyBank/Resources/budget_data.csv") as read_obj:
+with open("Resources/budget_data.csv") as read_obj:
     csv_reader = reader(read_obj)
     next(csv_reader)
     greatestdecrease = min(csv_reader, key=lambda row: int(row[1]))
@@ -73,7 +73,7 @@ print(greatestdecrease)
 import os
 
 os.getcwd()
-os.chdir('C:\\Users\\mahoy\\Documents\\GitHub\\Python-Challenge\\PyBank\\analysis')
+os.chdir('C:\\Users\\mahoy\\Documents\\GitHub\\Python-Challenge\\analysis')
 
 result_txt = open("Result.txt", "w", encoding='utf-8')
 print(f"""
