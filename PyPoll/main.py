@@ -2,7 +2,7 @@
 #                                             row[0]   row[1]      row[3]
 
 import os
-os.chdir('C:\\Users\\mahoy\\Documents\\GitHub\\Python-Challenge\\PyPoll')
+
 
 # The total number of votes cast
 
