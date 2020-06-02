@@ -45,10 +45,10 @@ with open("Resources/electron_data.csv") as read_obj:
         thewinner = "O'Tooley"
     elif vforkhan == winner:
         thewinner = "Khan"
-kpercent = round(vforkhan / totalvotes * 100, 3)
-cpercent = round(vforcorrey / totalvotes * 100, 3)
-lpercent = round(vforli / totalvotes * 100, 3)
-opercent = round(vfortooly / totalvotes * 100, 3)
+kpercent = "{:.3f}".format(vforkhan / totalvotes * 100)
+cpercent = "{:.3f}".format(vforcorrey / totalvotes * 100)
+lpercent = "{:.3f}".format(vforli / totalvotes * 100)
+opercent = "{:.3f}".format(vfortooly / totalvotes * 100)
 
 print(f"""
 Election Results

@@ -1,5 +1,5 @@
 import os
-os.chdir('C:\\Users\\mahoy\\Documents\\GitHub\\Python-Challenge\\PyBank')
+# os.chdir('C:\\Users\\mahoy\\Documents\\GitHub\\Python-Challenge\\PyBank')
 
 # Open the csv file, then calculate the total of values in row[1], using for loop.
 from csv import reader 
