@@ -1,4 +1,8 @@
 import os
+<<<<<<< HEAD
+=======
+
+>>>>>>> e2cef246cdab6884a8e6ea0892fd9b1d194faf79
 
 # Open the csv file, then calculate the total of values in row[1], using for loop.
 from csv import reader 

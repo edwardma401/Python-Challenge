@@ -2,6 +2,10 @@
 #                                             row[0]   row[1]      row[3]
 
 import os
+<<<<<<< HEAD
+=======
+
+>>>>>>> e2cef246cdab6884a8e6ea0892fd9b1d194faf79
 
 # The total number of votes cast
 
