@@ -1,10 +1,5 @@
 import os
-<<<<<<< HEAD
-=======
 
->>>>>>> e2cef246cdab6884a8e6ea0892fd9b1d194faf79
-
-# Open the csv file, then calculate the total of values in row[1], using for loop.
 from csv import reader 
 with open("Resources/budget_data.csv") as read_obj: 
     csv_reader = reader(read_obj) 
@@ -14,8 +9,6 @@ with open("Resources/budget_data.csv") as read_obj:
         total += int(row[1])
 print(total)
 
-# Change the csv file contents into a list, so that the number of indexes can be identified, which will be equivalent to the number of monhts.
-# Counting from [1:] will allow us to avoid counting the header.
 from csv import reader    
 with open("Resources/budget_data.csv") as read_obj:
     csv_reader = reader(read_obj)
@@ -23,7 +16,7 @@ with open("Resources/budget_data.csv") as read_obj:
     totalmonths = len(list_of_rows[1:])
 print(totalmonths)
 
-# In order to calculate average change, need to get the total of differences first.
+
 totaldifference = 0
 difference = 0
 
@@ -41,14 +34,11 @@ with open("Resources/budget_data.csv") as read_obj:
                 difference = int(row[1]) - int(i[1])  
                 totaldifference += difference
                 differnece = 0
-# print(totaldifference)
 
-# total difference divided by total months -1 will yeild average change.
 averagechange = totaldifference / (totalmonths - 1)
 averagechange = round(averagechange, 2)
 print(averagechange)
 
-# Using max and min method, can identify greatest decrease and increase.
 from csv import reader    
 with open("Resources/budget_data.csv") as read_obj:
     csv_reader = reader(read_obj)
@@ -73,9 +63,6 @@ Average Change : {averagechange}
 Greatest Increase in Profits : {greatestincrease}
 Greatest Decrease in Profits : {greatestdecrease}
 """, end="")
-
-# import os so that python can change the directory to create the file.
-
 
 os.getcwd()
 os.chdir('C:\\Users\\mahoy\\Documents\\GitHub\\Python-Challenge\\PyBank\\analysis')

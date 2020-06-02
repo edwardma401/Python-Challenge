@@ -1,13 +1,5 @@
-# The dataset is composed of three columns: Voter ID, County, and Candidate. Your task is to create a Python script that analyzes the votes and calculates each of the following:
-#                                             row[0]   row[1]      row[3]
 
 import os
-<<<<<<< HEAD
-=======
-
->>>>>>> e2cef246cdab6884a8e6ea0892fd9b1d194faf79
-
-# The total number of votes cast
 
 from csv import reader 
 with open("Resources/electron_data.csv") as read_obj: 
@@ -15,7 +7,6 @@ with open("Resources/electron_data.csv") as read_obj:
     csv_reader = list(csv_reader)
     totalvotes = len(csv_reader[1:])
 
-# A complete list of candidates who received votes
 vforkhan = 0
 vforcorrey = 0
 vforli = 0
